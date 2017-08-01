@@ -3,20 +3,6 @@
 # compiled output
 /dist
 /tmp
-<<<<<<< HEAD
-
-# dependencies
-/node_modules
-/bower_components
-
-# IDEs and editors
-/.idea
-/.vscode
-.project
-.classpath
-*.launch
-.settings/
-=======
 /out-tsc
 
 # dependencies
@@ -37,16 +23,11 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
->>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
 
 # misc
 /.sass-cache
 /connect.lock
-<<<<<<< HEAD
-/coverage/*
-=======
 /coverage
->>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
 /libpeerconnection.log
 npm-debug.log
 testem.log
@@ -56,10 +37,6 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
-<<<<<<< HEAD
-#System Files
-=======
 # System Files
->>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
 .DS_Store
 Thumbs.db
