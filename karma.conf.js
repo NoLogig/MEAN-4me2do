@@ -15,6 +15,7 @@ module.exports = function (config) {
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
+<<<<<<< HEAD
     files: [
       { pattern: './src/test.ts', watched: false }
     ],
@@ -24,6 +25,8 @@ module.exports = function (config) {
     mime: {
       'text/x-typescript': ['ts','tsx']
     },
+=======
+>>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
     coverageIstanbulReporter: {
       reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
@@ -31,9 +34,13 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
+<<<<<<< HEAD
     reporters: config.angularCli && config.angularCli.codeCoverage
       ? ['progress', 'coverage-istanbul']
       : ['progress', 'kjhtml'],
+=======
+    reporters: ['progress', 'kjhtml'],
+>>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

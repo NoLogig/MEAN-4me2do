@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
+<<<<<<< HEAD
     "name": "angular2-express-starter"
+=======
+    "name": "do-now"
+>>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
   },
   "apps": [
     {
@@ -19,7 +23,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+<<<<<<< HEAD
         "../node_modules/normalize.css/normalize.css",
+=======
+>>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
         "styles.css"
       ],
       "scripts": [],
@@ -37,6 +44,7 @@
   },
   "lint": [
     {
+<<<<<<< HEAD
       "project": "src/tsconfig.app.json"
     },
     {
@@ -44,6 +52,18 @@
     },
     {
       "project": "e2e/tsconfig.e2e.json"
+=======
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+>>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
     }
   ],
   "test": {

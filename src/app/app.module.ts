@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { StoreModule } from '@ngrx/store';
@@ -16,6 +17,15 @@ import { FeedEffects } from './store/feed/feed.effects';
 import { ProfileEffects } from './store/profile/profile.effects';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
+=======
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { PostsComponent } from './posts/posts.component';
+
+import { PostsService } from './posts.service';
+
+>>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
 
 @NgModule({
   declarations: [
@@ -23,6 +33,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     SharedModule,
     FormsModule,
     HttpModule,
@@ -48,3 +59,11 @@ import { RouterModule } from '@angular/router';
   ]
 })
 export class AppModule {}
+=======
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+>>>>>>> 6f98240ad55af890825641613a1169ccc124bdaa
