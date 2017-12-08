@@ -1,0 +1,17 @@
+
+
+
+.three {
+    background: url('https://lorempixel.com/1200/1200/people') 50% 0 no-repeat fixed;
+    background-size:cover;
+    height:100%;
+    margin:0 auto;
+    overflow:hidden;
+    /* background-attachment: fixed !important; */
+}
+
+.four {
+    height:auto;
+    color: black;
+    overflow:hidden;
+}

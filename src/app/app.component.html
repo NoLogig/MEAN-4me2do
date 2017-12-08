@@ -1,22 +1,70 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io//">Angular blog</a></h2>
-  </li>
-</ul>
-<router-outlet></router-outlet>
+<mat-toolbar color="secondary">
 
-<res-app>Respon-load</res-app>
+  <span class="nologig-brand">NoLogig</span>
+
+  <nav mat-tab-nav-bar>
+
+    <a style="min-width:auto;" mat-tab-link *ngFor="let r of routes; let i=index" [routerLink]="r.path" routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+
+      <mat-icon class="example-icon">{{navIcon[i]}}</mat-icon>
+
+    </a>
+
+  </nav>
+
+  <span class="between-spacer"></span>
+
+  <mat-slide-toggle [checked]="sidenav.opened" (click)="sidenav.toggle()">
+
+    <button mat-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+
+  </mat-slide-toggle>
+
+</mat-toolbar>
+
+
+  <mat-sidenav-container>
+
+      <h1>This site is under heavy development v0.2.8 </h1>
+
+    <mat-sidenav #sidenav class="sidenav-panel" position="end">
+
+      <ul class="sidenav-link-list">
+        <li>
+          <a mat-raised-button href="">
+            <mat-icon style="padding-right: 8px;">home</mat-icon>M.E.A.N Prototype</a>
+        </li>
+        <li>
+          <a mat-raised-button href="">Node</a>
+        </li>
+        <li>
+          <a mat-raised-button href="">TypeScript</a>
+        </li>
+        <li>
+          <a mat-raised-button href="">Angular 5</a>
+        </li>
+      </ul>
+
+    </mat-sidenav>
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-container>
+
+
+  
+
+  <!-- Footer -->
+  <mat-card class="mat-cardView">
+
+    <h5 style="text-align: right; padding: 0 12px 4px 0; width: 98vw;">
+      Follow me @:
+      <a mat-raised-button target="_blank" href="https://github.com/NoLogig/Inspiration-Station">GitHub</a>
+      <a mat-raised-button target="_blank" href="https://www.xing.com/profile/Max_Schweigerdt">Xing</a>
+      <a mat-raised-button target="_blank" href="https://curse.com">Curse (in progress after request overflow)</a>
+    </h5>
+
+  </mat-card>

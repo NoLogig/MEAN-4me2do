@@ -12,11 +12,7 @@ export class Database {
     return `mongodb://${dbConfig.dbuser}:${dbConfig.dbpassword}@${dbConfig.host}:${dbConfig.port}/${dbConfig.dbname}`;
   }
 
-  constructor() {
-
-    this.mongoClient = MongoClient;
-
-  }
+  constructor() {  }
 
   public get getDB() { return this.db; }
 
@@ -24,7 +20,7 @@ export class Database {
 
 
     // Connect to the db
-    this.mongoClient.connect(this.mongoURI(dbConfig), (err, db) => {
+    MongoClient.connect(this.mongoURI(dbConfig), (err, db) => {
 
       if (!err) {
         this.db = db;

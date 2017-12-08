@@ -11,6 +11,7 @@ import { Cursor, MongoCallback, MongoClient, MongoError, ObjectID } from 'mongod
 export namespace dbCtrl {
 
   export function read(id: string, collectionName: string, cb: (dbResponse: IDatabaseResponse<IReadResponse>) => void): void {
+   
     App.db.collection(collectionName, (err, collection) => {
 
       if (err) {
@@ -57,10 +58,10 @@ export namespace dbCtrl {
           });
         }
         if (cursor) {
-          return cursor.toArray().then(ary => {
+          return cursor.toArray().then(arr => {
             return cb({
               error: null,
-              data: morphDataOnRetrieval(ary)
+              data: morphDataOnRetrieval(arr)
             });
           });
 
@@ -106,8 +107,7 @@ export namespace dbCtrl {
       });
     });
   }
-  export function create(item: Object, collectionName: string,
-    cb: (dbResp: IDatabaseResponse<ICreateResponse>) => void): void {
+  export function create(item: Object, collectionName: string, cb: (dbResp: IDatabaseResponse<ICreateResponse>) => void): void {
 
     // deep copy object so input doesn't get mutated
     const itemCopy = JSON.parse(JSON.stringify(item));

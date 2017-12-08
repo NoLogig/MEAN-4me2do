@@ -1,10 +1,10 @@
-import { InspirationStationPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('inspiration-station App', () => {
-  let page: InspirationStationPage;
+describe('inspiration-station-ng5 App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new InspirationStationPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {

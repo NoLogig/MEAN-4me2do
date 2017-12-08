@@ -1,0 +1,88 @@
+<mat-card>
+
+    <mat-list>
+      
+      <h3 matSubheader>Folders</h3>
+      
+      <mat-list-item *ngFor="let todo of todos">
+        
+        <mat-icon matListIcon>folder</mat-icon>
+        <h4 matLine>{{todo.text}}</h4>
+        <mat-checkbox matLine [(ngModel)]="todo.isCompleted"> Done?</mat-checkbox>
+        
+      </mat-list-item>
+      
+    </mat-list>
+    
+    
+    <mat-selection-list #todosa>
+      <mat-list-option *ngFor="let to of todos">
+        {{to.text}}
+      </mat-list-option>
+    </mat-selection-list>
+    
+    <p>
+      Todos left: {{ todosa.options.length - todosa.selectedOptions.selected.length}}
+    </p>
+</mat-card>
+  
+  <mat-card class="three">
+    Parallax test 3
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </mat-card>
+  
+  <mat-card class="four">
+    Parallax test 4
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </mat-card>
+  

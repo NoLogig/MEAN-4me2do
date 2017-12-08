@@ -1,16 +1,20 @@
 {
   "name": "Inspiration Station",
-  "description": "Blog-app using MEAN stack",
+  "description": "2do - app using MEAN stack",
   "keywords": [
     "MEAN",
-    "Node",
-    "Angular 4",
-    "Express",
     "MongoDB",
+    "Express",
+    "Angular 4",
+    "NodeJS",
+    "Angular Material",
+    "Heroku",
     "TypeScript",
-    "Angular Material"
+    "Passport"
   ],
   "repository": "https://github.com/NoLogig/Inspiration-Station",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "image": "heroku/nodejs",
   "success_url": "/",
   "formation": {
     "web": {

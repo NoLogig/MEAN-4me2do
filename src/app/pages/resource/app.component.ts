@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AsyncPipe } from "@angular/common";
 import { ResourceService } from "./resource.service";
 
 @Component({
@@ -9,12 +10,15 @@ import { ResourceService } from "./resource.service";
 })
 export class ResourceComponent {
 
+  todos: Array<{}>;
+
   constructor(private resourceService: ResourceService) {
-    resourceService.getResources('myCollection').subscribe(
-      (res) => console.log(res),
-      err => console.log(err),
-      () => console.log("service_getResource-myCol: DONE")
-    )
+
+    resourceService.getResources('myCollection').subscribe((res) => {
+
+      this.todos = res[0].todos || null;
+
+    })
   };
 }
 

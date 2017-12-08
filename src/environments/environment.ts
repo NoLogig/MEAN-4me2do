@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-  // api: 'http://demo.tsmean.com:4242/api/v1'
-  api: 'http://localhost:4300/api/v1'
+  // api: 'http://localhost:4300/api/v1'
+  api: 'https://inspiration-station.herokuapp.com/api/todos'
 };

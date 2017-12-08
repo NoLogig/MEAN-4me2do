@@ -1,64 +1,90 @@
-.main {
-  width: 800px;
-  padding: 20px;
-}
-* {
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
-    font-family: calibri;
+/* footer */
+
+
+mat-toolbar a:hover,
+mat-toolbar button:hover mat-icon {
+  transform: scale(1.4);
+  color: aqua;
 }
 
-.strike span {
-    text-decoration: line-through;
-    color: #ccc;
+.nologig-brand {
+  border-color: #444;
+  border-width: 1px;
+  border-right-style: solid;
+  padding: 0 4px 0 4px;
 }
 
-.todos {
-    padding: 20px;
+.mat-cardView {
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  z-index: 2;
+  background-color: #555;
+  color: #fff;
 }
 
-.todo {
-    padding: 10px;
-    font-size: 21px;
-    border-bottom: 1px solid;
+
+/* main content for router-outlet */
+
+mat-sidenav-container {
+  height: 100%;
+  margin-top: 49px;
+  margin-bottom: 40px;
+  padding: 0;
+  background-color: #303030;
 }
 
-.todo .btn {
-    margin-left: 5px;
-    width: 72px;
+
+/* header with navigation */
+
+mat-toolbar {
+  min-height: 49px;
+  height: 49px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  padding: 0 0 0 4px;
+  width: 100vw;
+  color: aqua;
 }
 
-.todo:hover {
-    background: #e7e7e7;
+.sidenav-panel {
+  width: 25vw;
+  min-width: 140px;
+  max-width: 260px;
+  padding: 0;
 }
 
-@media (max-width: 991px) {
-    .todo .btn {
-        margin-bottom: 10px;
-    }
-    .todo input[type=checkbox] {
-        width: 25px;
-        height: 25px;
-    }
+.sidenav-panel>ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
 }
 
-@media (max-width: 991px) {
-    .todo .btn-warning {
-        margin-top: 10px;
-        margin-left: 0px
-    }
+.sidenav-panel>ul a {
+  width: 100%;
+  text-align: left;
 }
 
-@media (max-width: 450px) {
-    .todo .col-xs-8 {
-        width: 85%;
-    }
-    .todo .col-xs-3 {
-        width: 100%;
-        text-align: center;
-        border-top: 1px dashed #aaa;
-        padding-top: 10px;
-        margin-top: 10px;
-    }
+.sidenav-panel>ul a:hover {
+  transform: scale(1.2);
+  color: aqua;
+}
+
+.between-spacer {
+  flex: 1 1 auto;
+}
+
+.sidenav-link-list {
+  overflow-y: visible;
+}
+
+mat-sidenav {
+  overflow-y: visible;
+}
+mat-sidenav-content {
+  background-color: #303030;
 }

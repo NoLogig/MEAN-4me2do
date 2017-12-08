@@ -1,0 +1,28 @@
+
+
+
+.example-headers-align .mat-expansion-panel-header-title, 
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+mat-expansion-panel {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 4px solid #303030;
+}
+.mat-expansion-panel.mat-expanded {
+ transform: scale(1.05);
+}
+mat-expansion-panel:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  padding-left: 4wv;
+}
