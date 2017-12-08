@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "do-now"
+    "name": "inspiration-station"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/client",
       "assets": [
         "assets",
         "favicon.ico"

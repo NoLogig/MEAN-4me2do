@@ -1,10 +1,10 @@
-import { DoNowPage } from './app.po';
+import { InspirationStationPage } from './app.po';
 
-describe('do-now App', () => {
-  let page: DoNowPage;
+describe('inspiration-station App', () => {
+  let page: InspirationStationPage;
 
   beforeEach(() => {
-    page = new DoNowPage();
+    page = new InspirationStationPage();
   });
 
   it('should display welcome message', () => {

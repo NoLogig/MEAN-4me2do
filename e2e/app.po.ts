@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class DoNowPage {
+export class InspirationStationPage {
   navigateTo() {
     return browser.get('/');
   }

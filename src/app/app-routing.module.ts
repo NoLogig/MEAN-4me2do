@@ -1,29 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { PostsComponent } from './posts/posts.component';
+import { HomeComponent } from "./pages/home/home.component";
 const routes: Routes = [
-  {
+
+  { 
     path: '',
-    children: [],
-    redirectTo: '/',
-    pathMatch: 'full'
-  },  
+    pathMatch: 'full', 
+    redirectTo: 'home',
+  },
+    { 
+    path: 'home',
+    children: [], 
+    component: HomeComponent
+  },
   {
-    path: 'posts',
-    component: PostsComponent
+    path: "**",
+    component: HomeComponent
+    /* to Do: Fancy PageNotFound 8) */
   }
 ];
 
-
-const ROUTES = [
-  {
-    path: '',
-    redirectTo: 'posts',
-    pathMatch: 'full'
-  },
-
-];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
