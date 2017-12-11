@@ -27,7 +27,6 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ChartsModule } from "ng2-charts";
 import { ChartsComponent } from './pages/charts/charts.component';
 import { ChartBarComponent } from './pages/charts/chart-bar/chart-bar.component';
-import { MineComponent } from './pages/mine/mine.component';
 
 
 @NgModule({
@@ -40,8 +39,7 @@ import { MineComponent } from './pages/mine/mine.component';
     Angular101Component,
     BlogComponent,
     ChartsComponent,
-    ChartBarComponent,
-    MineComponent
+    ChartBarComponent
   ],
   imports: [
     AppRoutingModule,

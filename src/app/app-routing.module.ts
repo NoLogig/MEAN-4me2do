@@ -5,7 +5,6 @@ import { AchievmentsComponent } from "./pages/achievments/achievments.component"
 import { Angular101Component } from "./pages/angular101/angular101.component";
 import { ResourceComponent  } from "./pages/resource/app.component";
 import { BlogComponent } from "./pages/blog/blog.component";
-import { MineComponent } from "./pages/mine/mine.component";
 
 export const routes: Routes = [
   {
@@ -37,11 +36,6 @@ export const routes: Routes = [
     path: 'blog',
     children: [],
     component: BlogComponent
-  },
-  {
-    path: 'mine',
-    children: [],
-    component: MineComponent
   },
   {
     path: "**",
