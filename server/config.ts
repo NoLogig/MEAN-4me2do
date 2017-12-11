@@ -11,8 +11,7 @@ export const db = {
   dbuser: "NoLogig",
   dbpassword: "Scheis0egal!",
   port: 29143,
-  dbname: "nologig-db",
-  testsMayDropDb: false
+  dbname: "nologig-db"
 };
 
 export const authConfig = {
@@ -39,6 +38,6 @@ export const corsOptions = {
   allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept", "X-Access-Token"],
   credentials: true,
   methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
-  origin: "https://inspiration-station.herokuapp.com/",
+  origin: "https://mean--getting-started.herokuapp.com/",
   preflightContinue: false
 }
