@@ -20,7 +20,7 @@ export class TodosComponent implements OnInit {
   loops() {
 
     this.looper = (++this.looper) % 6;
-    
+
     this.looper == 1 ? r.path = "home" :
     this.looper == 2 ? r.path = "note" :
     this.looper == 3 ? r.path = "lock open" : 
@@ -28,4 +28,3 @@ export class TodosComponent implements OnInit {
     this.looper == 5 ? r.path = "description" : r.path = "home";
   }
 }
-  

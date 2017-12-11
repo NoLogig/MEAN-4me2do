@@ -26,7 +26,7 @@ export class ResourceService {
     return WebUtils.urlJoin(
       this.apiUrl,
       resourceName);
-  };
+  }
 
   getResources(resourceName: string): Observable<IResource[]> {
 
